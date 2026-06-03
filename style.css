@@ -118,7 +118,7 @@ a:hover {
     list-style: none;
 }
 
-.menu-links,open {
+.menu-links.open {
     max-height: 300px;
 }
 
@@ -126,7 +126,7 @@ a:hover {
     transform:rotate(45deg) translate(10px, 5px);
 }
 
-.hamburger-icon.open span:ntn-child(2) {
+.hamburger-icon.open span:nth-child(2) {
     opacity: 0;
 }
 
@@ -144,4 +144,27 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/* Sections */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 }
